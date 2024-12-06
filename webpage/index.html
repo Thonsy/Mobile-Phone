@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Mobile Phone</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1> Mobile Phone</h1>
+						
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first">First Section</a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>History</h2>
+										</header>
+										<p>The first handheld cellular mobile phone was demonstrated by John F. Mitchell and Martin Cooper of Motorola in 1973, using a handset weighing 2 kilograms (4.4 lb). The first commercial automated cellular network (1G) analog was launched in Japan by Nippon Telegraph and Telephone in 1979.</p>
+										<ul class="actions">
+											<li><a href="generic.html" class="button">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Types of Smartphone</h2>
+								</header>
+
+									</li>
+									<li>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>Smartphone</h3>
+										<p>Smartphones are defined by their advanced computing capabilities, which include internet connectivity and access to a wide range of applications. The International Telecommunication Union measures those with Internet connection, which it calls Active Mobile-Broadband subscriptions (which includes tablets, etc.). In developed countries, smartphones have largely replaced earlier mobile technologies, while in developing regions, they account for around 50% of all mobile phone usage.</p>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<h3>Feature phone</h3>
+										<p>Feature phone is a term typically used as a retronym to describe mobile phones which are limited in capabilities in contrast to a modern smartphone. Feature phones typically provide voice calling and text messaging functionality, in addition to basic multimedia and Internet capabilities, and other services offered by the user's wireless service provider. A feature phone has additional functions over and above a basic mobile phone, which is only capable of voice calling and text messaging. Feature phones and basic mobile phones tend to use a proprietary, custom-designed software and user interface. By contrast, smartphones generally use a mobile operating system that often shares common traits across devices.</p>
+	</body>
+</html>
+<script type="module">
+  import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+
+  const widget = await Chatbox.initBubble({
+    agentId: 'cm4bktt1b0mzjq30m82zl1pbb',
+    
+    // optional 
+    // If provided will create a contact for the user and link it to the conversation
+    contact: {
+      firstName: 'John',
+      lastName: 'Doe',
+      email: 'customer@email.com',
+      phoneNumber: '+33612345644',
+      userId: '42424242',
+    },
+    // optional
+    // Override initial messages
+    initialMessages: [
+      'Hello Georges how are you doing today?',
+      'How can I help you ?',
+    ],
+    // optional
+    // Provided context will be appended to the Agent system prompt
+    context: "The user you are talking to is John. Start by Greeting him by his name.",
+  });
+
+  // open the chat bubble
+  widget.open();
+
+  // close the chat bubble
+  widget.close()
+
+  // or 
+  widget.toggle()
+</script>
